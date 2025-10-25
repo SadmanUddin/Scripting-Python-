@@ -1,3 +1,5 @@
+#You must create a Python script called triangles.py that builds and explores Pascal’s Triangle without using any external libraries. The program should ask the user for the triangle’s depth, then generate and display the full Pascal’s Triangle using nested lists. You’ll implement four functions: generate(), which constructs the triangle and prints it; prime(row, triangle), which checks whether all numbers in a given row (by row number, not index) are divisible by that row number—true for rows where the row number is a prime; reflect(triangle), which displays and returns the triangle flipped upside down; and binary(triangle), which converts all odd numbers to 1 and even numbers to 0, creating a binary version of the triangle. All new triangle variants must be generated using list operations like .append() to build rows and elements step by step.
+
 triangle = []
 
 def generate():
