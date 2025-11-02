@@ -1,10 +1,15 @@
+#The assignment is to build a Python digital assistant with four features: weather info (returning temperature, feels-like, conditions, humidity, wind), knowledge queries (returning a Wikipedia summary), translation (returning original and translated text for a chosen language), and entertainment (returning movie info from OMDB, a joke from icanhazdadjoke, or a quote from type.fit). All functions must return dictionaries, handle user inputs, and allow returning to the main menu.
+
+
+
+
 import requests
 import json
 import time
 import wikipedia
 
 def weather(location):
-    KEY = "20bb6f11daa57424c8618f23de572646"
+    KEY = "" # You can use your own API keys...i cannot provide mine cause its paid
     X = f'https://api.openweathermap.org/data/2.5/weather?q={location}&units=metric&appid={KEY}'
 
     Data = requests.get(X)
@@ -43,7 +48,7 @@ def translate(text, target_language):
     return result
 
 def entertainment(category, movie_title=None):
-    key = "d75b32e8"
+    key = "" #provide an API key of your own 
     if category == 1:
         link=f'http://www.omdbapi.com/?t={movie_title}&apikey={key}'
         data = requests.get(link)
