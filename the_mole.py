@@ -1,3 +1,9 @@
+# The assignment requires building a program that, for a given year, retrieves detailed information about the Belgian TV show De Mol. You must first get the season’s data from Wikipedia, including the mole, the winner, and the location. Then, based on the location, translate a given sentence into the appropriate language. You also need to scrape news headlines related to that season from newsmonkey.be and gather detailed information about the mole, including saving their image, from wieisdemol.be. Finally, you are to retrieve TV ratings from the CIM website, identifying the episode of De Mol with the highest viewers and the corresponding date. All these pieces of information are to be combined and displayed in the main() function for a user-input year. The program must handle scraping and parsing carefully, and in environments where Selenium cannot be used, only requests and BeautifulSoup should be employed to extract the necessary data.
+
+
+
+
+
 from bs4 import BeautifulSoup
 import requests
 import time
