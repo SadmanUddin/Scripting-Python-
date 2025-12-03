@@ -1,3 +1,7 @@
+
+#single-threaded and multi-threaded. In single-thread mode, each function (tarot, solar, events) must run one after another, and all printing happens inside that block exactly the way you wrote it. In multi-thread mode, the three tasks must run simultaneously using threading.Thread, storing their results in a shared dictionary, and only after all threads finish you print the outputs in the same format. You don’t want any redesign, refactoring, or merging of logic — you want two distinct execution paths, one for “single” and one for “multi,” each producing identical output but using different execution strategies.
+
+
 import time
 from datetime import datetime 
 from bs4 import BeautifulSoup
